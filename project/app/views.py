@@ -10,5 +10,5 @@ class AdViewSet(viewsets.ModelViewSet):
     queryset = Ad.objects.all()
     serializer_class = AdSerializer
     filter_backends = [OrderingFilter, SearchFilter]
-    ordering_fields = ['price', 'create_at']
+    ordering_fields = ['create_at', 'price']
     pagination_class = PageNumberPagination
